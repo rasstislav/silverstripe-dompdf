@@ -17,7 +17,8 @@ class SS_DOMPDF {
         $this->dompdf->set_base_path(BASE_PATH);
         $this->dompdf->set_host(Director::absoluteBaseURL());        
     }
-
+	
+	//
     public function setOption($key, $value) {
         $this->dompdf->set_option($key, $value);
     }
