@@ -1,7 +1,7 @@
 {
     "name": "gdmedia/silverstripe-dompdf",
     "description": "SilverStripe PDF Generation via DOMPDF Library",
-    "type": "silverstripe-module",
+    "type": "silverstripe-vendormodule",
     "require": {
         "dompdf/dompdf": "^0.6.0"
     },
