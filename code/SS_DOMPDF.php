@@ -1,4 +1,7 @@
 <?php
+namespace Burnbright\SS_DOMPDF;
+
+use SilverStripe\Control\Director;
 
 /**
  * SilverStripe wrapper for DOMPDF
@@ -15,17 +18,17 @@ class SS_DOMPDF
 
         //set configuration
         require_once str_replace(DIRECTORY_SEPARATOR, '/', BASE_PATH . "/vendor/dompdf/dompdf/dompdf_config.inc.php");
-        $this->dompdf = new DOMPDF();
+        $this->dompdf = new \DOMPDF();
         $this->dompdf->set_base_path(BASE_PATH);
         $this->dompdf->set_host(Director::absoluteBaseURL());
     }
-    
+
     //
     public function setOption($key, $value)
     {
         $this->dompdf->set_option($key, $value);
     }
-    
+
     public function set_paper($size, $orientation)
     {
         $this->dompdf->set_paper($size, $orientation);
