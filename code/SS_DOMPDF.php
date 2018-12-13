@@ -1,6 +1,7 @@
 <?php
 namespace Burnbright\SS_DOMPDF;
 
+use Dompdf\Dompdf;
 use SilverStripe\Assets\File;
 use SilverStripe\Assets\FileNameFilter;
 use SilverStripe\Assets\Folder;
@@ -20,8 +21,7 @@ class SS_DOMPDF
         define('DOMPDF_ENABLE_AUTOLOAD', false);
 
         //set configuration
-        require_once str_replace(DIRECTORY_SEPARATOR, '/', BASE_PATH . "/vendor/dompdf/dompdf/dompdf_config.inc.php");
-        $this->dompdf = new \DOMPDF();
+        $this->dompdf = new Dompdf();
         $this->dompdf->set_base_path(BASE_PATH);
         $this->dompdf->set_host(Director::absoluteBaseURL());
     }
