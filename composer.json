@@ -1,11 +1,12 @@
 {
-    "name": "gdmedia/silverstripe-dompdf",
-    "description": "SilverStripe PDF Generation via DOMPDF Library",
-    "type": "silverstripe-vendormodule",
-    "require": {
-        "dompdf/dompdf": "^0.6.0"
-    },
-    "extra": {
-        "installer-name": "silverstripe-dompdf"
-    }
+  "name": "gdmedia/silverstripe-dompdf",
+  "description": "SilverStripe PDF Generation via DOMPDF Library",
+  "type": "silverstripe-vendormodule",
+  "require": {
+    "dompdf/dompdf": "^0.8.0",
+    "silverstripe/framework": "^4.0.0"
+  },
+  "extra": {
+    "installer-name": "silverstripe-dompdf"
+  }
 }
