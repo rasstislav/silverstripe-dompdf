@@ -1,5 +1,7 @@
 <?php
 
+use Dompdf\Dompdf;
+
 /**
  * SilverStripe wrapper for DOMPDF
  */
