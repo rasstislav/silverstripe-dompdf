@@ -86,10 +86,10 @@ class SS_DOMPDF
      * uesful function that streams the pdf to the browser,
      * with correct headers, and ends php execution.
      */
-    public function streamdebug()
+    public function streamdebug($outfile = 'debug')
     {
         header('Content-type: application/pdf');
-        $this->stream('debug', array('Attachment' => 0));
+        $this->stream($outfile, array('Attachment' => 0));
         die();
     }
 }
