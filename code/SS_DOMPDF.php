@@ -10,11 +10,6 @@ class SS_DOMPDF
 
     public function __construct()
     {
-        // inhibit DOMPDF's auto-loader
-        define('DOMPDF_ENABLE_AUTOLOAD', false);
-
-        //set configuration
-        require_once str_replace(DIRECTORY_SEPARATOR, '/', BASE_PATH . "/vendor/dompdf/dompdf/dompdf_config.inc.php");
         $this->dompdf = new DOMPDF();
         $this->dompdf->set_base_path(BASE_PATH);
         $this->dompdf->set_host(Director::absoluteBaseURL());
