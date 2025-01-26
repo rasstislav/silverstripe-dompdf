@@ -17,9 +17,6 @@ class SS_DOMPDF
 
     public function __construct()
     {
-        // inhibit DOMPDF's auto-loader
-        define('DOMPDF_ENABLE_AUTOLOAD', false);
-
         //set configuration
         $this->dompdf = new Dompdf();
         $this->dompdf->set_base_path(BASE_PATH);
