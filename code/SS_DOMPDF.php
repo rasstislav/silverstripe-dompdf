@@ -1,5 +1,6 @@
 <?php
-namespace Burnbright\SS_DOMPDF;
+
+namespace TJBW\SS_DOMPDF;
 
 use Dompdf\Dompdf;
 use SilverStripe\Assets\File;
